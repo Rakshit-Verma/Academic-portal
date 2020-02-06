@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <a href="/student" class="w3-bar-item w3-button w3-padding-large">HOME</a><br>
+    <a href="/courses" class="w3-bar-item w3-button w3-padding-large">COURSES</a><br>
+    <a href="/prerequisites" class="w3-bar-item w3-button w3-padding-large">PREREQUISITES</a><br>
+    <a href="/mycourses" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY COURSES</a><br>
+    <a href="/registrationportal" class="w3-bar-item w3-button w3-padding-large w3-hide-small">REGISTERATION
+        PORTAL</a><br>
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">LOG OUT</a><br><br>
+    <div class="w3-padding-64 w3-container">
+        <div class="w3-content">
+            <% datas.forEach(post => { %>
+            <div class="w3-card w3-container w3-padding-64">
+
+                <div class="w3-third w3-white">
+                    <p> </p>
+                    <p> id: <%= post.id%> <br>
+                        name: <%= post.name%> <br>
+                        l: <%= post.l%> <br>
+                        t: <%= post.t%> <br>
+                        p: <%= post.p%></p>
+                </div>
+                <div class="w3-third w3-white">
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+
+</html>

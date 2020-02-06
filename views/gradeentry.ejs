@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+  <a href="/addcourses" class="w3-bar-item w3-button w3-padding-large">FLOAT COURSE</a><br>
+  <a href="/myofferedcourses" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COURSES OFFERED BY
+    ME</a><br>
+  <a href="/" class="w3-bar-item w3-button w3-padding-large">LOG OUT</a><br><br>
+  <div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <form action="/gradeentry" method="POST">
+          <div class="form-group">
+
+            <label for="courseid">course_id</label>
+            <input type="courseid" id="courseid" name="courseid" class="form-control" placeholder="Enter courseid" />
+          </div>
+
+          <div class="form-group">
+
+            <label for="studentid">student_id</label>
+            <input type="studentid" id="studentid" name="studentid" class="form-control"
+              placeholder="Enter studentid" />
+          </div>
+
+          <div class="form-group">
+
+            <label for="grade">grade</label>
+            <input type="grade" id="grade" name="grade" class="form-control" placeholder="Enter grade" />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

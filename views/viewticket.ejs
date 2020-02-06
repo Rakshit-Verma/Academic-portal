@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">LOG OUT</a><br><br>
+    <div class="w3-padding-64 w3-container">
+        <div class="w3-content">
+
+            <% datas.forEach(post => { %>
+
+            <div class="w3-third w3-white">
+                <p> </p>
+                <p> student_id: <%= post.student_id%> <br>
+                    ticket_id: <%= post.ticket_id%> <br>
+                    status: <%= post.status%></p>
+            </div>
+            <a class="w3-btn w3-blue w3-padding"
+                href="/viewticket2?status=<%=post.status%>&student_id=<%=post.student_id%>&course_id=<%=post.course_offered_id%>">done</a>
+            <% }) %>
+        </div>
+    </div>
+</body>
+
+</html>

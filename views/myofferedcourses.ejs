@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+    <a href="/addcourses" class="w3-bar-item w3-button w3-padding-large">FLOAT COURSE</a><br>
+    <a href="/gradeentry" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ENTER GRADES</a><br>
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">LOG OUT</a><br><br>
+    <div class="w3-padding-64 w3-container">
+        <div class="w3-content">
+            <% datas.forEach(post => { %>
+            <div class="w3-card w3-container w3-padding-64">
+
+                <div class="w3-third w3-white">
+                    <p> </p>
+                    <p> id: <%= post.course_id%> <br>
+                        year: <%= post.year%> <br>
+                        semester: <%= post.semester%> <br>
+                        cgpa_required: <%= post.cgpa_required%> <br>
+                        time_slot: <%= post.time_slot_id%></p>
+
+                </div>
+                <div class="w3-third w3-white">
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+
+</html>

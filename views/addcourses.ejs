@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+  <!-- <a href="/addcourses" class="w3-bar-item w3-button w3-padding-large">FLOAT COURSE</a><br> -->
+  <a href="/myofferedcourses" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COURSES OFFERED BY ME</a><br>
+  <a href="/gradeentry" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ENTER GRADES</a><br>
+  <a href="/" class="w3-bar-item w3-button w3-padding-large">LOG OUT</a><br><br>
+  <form action="/addcourses" method="POST">
+    <div class="form-group">
+
+      <label for="course_id">course_id</label>
+      <input type="course_id" id="course_id" name="course_id" class="form-control" placeholder="Enter course id" />
+    </div>
+
+    <div class="form-group">
+      <label for="course_cgpa">cgpa required</label>
+      <input type="course_cgpa" id="course_cgpa" name="course_cgpa" class="form-control"
+        placeholder="Enter cgpa required" />
+    </div>
+
+    <div class="form-group">
+      <label for="time_slot">time slot</label>
+      <input type="time_slot" id="time_slot" name="time_slot" class="form-control" placeholder="time_slot" />
+    </div>
+
+    <div class="form-group">
+      <label for="prerequisite">enter prerequisite for this course</label>
+      <input type="prerequisite" id="prerequisite" name="prerequisite" class="form-control"
+        placeholder="prerequisite" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary btn-block">submit</button>
+  </form>
+</body>
+
+</html>

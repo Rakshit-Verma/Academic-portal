@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <a href="/student" class="w3-bar-item w3-button w3-padding-large">HOME</a><br>
+    <a href="/courses" class="w3-bar-item w3-button w3-padding-large">COURSES</a><br>
+    <a href="/prerequisites" class="w3-bar-item w3-button w3-padding-large">PREREQUISITES</a><br>
+    <a href="/mycourses" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY COURSES</a><br>
+    <a href="/registrationportal" class="w3-bar-item w3-button w3-padding-large w3-hide-small">REGISTERATION
+        PORTAL</a><br>
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">LOG OUT</a><br><br>
+    <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body">
+                <form action="/registrationportal" method="POST">
+                    <div class="form-group">
+
+                        <label for="courseid">course_id</label>
+                        <input type="courseid" id="courseid" name="courseid" class="form-control"
+                            placeholder="Enter courseid" />
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+call can_take('s1', 'c10', 1)
+--1.
+call slot_free('s1', 'c10', '2017', 'fall', 1)
+--2.
+call public.comp_preq('s1', 'c10', 1)
+--3.
+call public.get_total_credits('c2', '1')
+4.
+call public.creditlimit('s1', 1)
+5.
+call public.credits_taken('s1', 1)
+--6.//pro
+call public.get_cgpa('s1', 1)
+--7.//prob
+call check_student_batch_allowed('s1', 'c10', 2017, 'fall', 1)
+--8.
+call has_passed('s1','c10',1)

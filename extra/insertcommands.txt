@@ -1,0 +1,25 @@
+INSERT INTO courses VALUES ('c1','c1',1,2,3);
+INSERT INTO courses VALUES ('c2','c2',2,2,0);
+INSERT INTO courses VALUES ('c3','c3',2,2,0);
+
+insert into department values ('CSE');
+
+insert into faculty values ('f1', 'f1', 'CSE');
+insert into faculty values ('f2', 'f2', 'CSE');
+insert into faculty values ('f3', 'f3', 'CSE');
+
+insert into batch values (2017, 'f1', 'CSE');
+
+insert into students values ('s1', 's1', 2017, 'CSE');
+insert into students values ('s2', 's2', 2017, 'CSE');
+insert into students values ('s3', 's3', 2017, 'CSE');
+
+insert into semesters values ( 2017, 'fall', 1, 1);
+
+INSERT INTO offered_courses VALUES ('c1',2017,'fall',4,'f1','A1');
+INSERT INTO offered_courses VALUES ('c2',2017,'fall',4,'f2','A2');
+INSERT INTO offered_courses VALUES ('c3',2017,'fall',4,'f3','A3');
+
+insert into batches_allowed values ('c1', 2017, 'fall', 2017, 'CSE');
+insert into batches_allowed values ('c2', 2017, 'fall', 2017, 'CSE');
+insert into batches_allowed values ('c3', 2017, 'fall', 2017, 'CSE');
